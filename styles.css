@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b1c3cf;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clock-container {
+  text-align: center;
+}
+
+.clock {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.timezones {
+  margin-top: 1rem;
+}
+
+.timezones button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #393e69;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timezones button:hover {
+  background-color: #000000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clock-container:hover .clock {
+  animation: pulse 1s infinite;
+}
